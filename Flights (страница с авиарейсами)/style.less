@@ -1,0 +1,190 @@
+@blue: rgb(79, 79, 195);
+@pad: 20px 100px;
+@bradius: 5px;
+
+*{
+    margin: 0;
+}
+
+header {
+    background-color: @blue;
+    padding: @pad;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    div {
+        align-self: center;
+        &:nth-child(1) {
+            font-size: 25pt;
+            justify-self: start;
+        }
+        &:nth-child(2) {
+            font-size: 14pt;
+            justify-self: end;
+        }
+    }
+}
+
+main {
+    padding: @pad;    
+    background-color: rgb(236, 236, 236);
+
+    .radio {
+        display: flex;
+        gap: 15px;
+    }
+
+    .infoTrip {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        padding: 10px 0 20px 0;
+
+        input, select {
+            border: 1px solid rgb(182, 181, 181);
+            border-radius: @bradius;
+            box-shadow: 0px -1px 1px 0px rgb(206, 205, 205);
+            padding: 10px 5px;
+
+            &::placeholder {
+                color: grey;
+            }
+        }
+
+        button {
+            background-color: @blue;
+            border-radius: @bradius;
+            border: none;
+            color: white;
+            font-size: 12pt;
+        }
+    }
+
+    .flights {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 20px;
+        
+
+        .filter{
+            background-color: white;
+            padding: 40px 20px;
+            box-shadow: 0px 0px 3px 1px rgb(224, 224, 224);
+            height: max-content;
+
+            .fil{
+                &:nth-child(1){
+                    font-weight: bold;
+                    font-size: 16pt;
+                    padding-bottom: 20px;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .blue {
+                    font-weight: bold;
+                    font-size: 14pt;
+                    color: @blue;
+                }
+                .stops {
+                    padding-left: 3px;
+                }
+            }
+            .pr{
+                padding: 20px 0;
+                .price {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+    
+                    input{
+                        width: 60px;
+                        border: 1px solid rgb(182, 181, 181);
+                        border-radius: @bradius;
+                        padding: 7px 3px;
+                    }
+    
+                    .dollar {
+                        display: flex;
+                        align-items: end;
+                        font-size: 14pt;
+                    }
+                }
+            }
+            .airlines {
+                div {
+                    padding-left: 3px;
+                }
+            }
+            
+        }
+        .flying {
+            background-color: white;
+            box-shadow: 0px 0px 3px 1px rgb(224, 224, 224);
+
+            .sydney{
+                    font-weight: bold;
+                    font-size: 16pt;
+                    padding: 40px 20px;
+                    text-align: center;
+            }
+            .flyingTab{
+                padding-bottom: 40px;
+                .string{
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    padding: 10px 20px;
+                    gap: 10px;    
+                    background-color: rgb(236, 236, 236);
+
+                    .line{
+                        justify-self: center;
+                        color: @blue;
+                        font-size: 14pt;
+                        font-weight: bold;
+                    }
+                }
+                
+                .flyingTabOne {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    padding: 10px 20px;
+                    gap: 10px;    
+
+                    div {
+                        justify-self: center;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        .one {
+                            font-size: 16pt;
+                            padding-bottom: 10px;
+                        }
+
+                        .two {
+                            color: grey;
+                            text-align: center;
+                        }
+
+                        button {
+                            background-color: @blue;
+                            border-radius: @bradius;
+                            border: none;
+                            color: white;
+                            font-size: 12pt;
+                            padding: 10px 20px;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                        }
+                        .bl{
+                            color: @blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

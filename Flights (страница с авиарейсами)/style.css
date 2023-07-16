@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+}
+header {
+  background-color: #4f4fc3;
+  padding: 20px 100px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+header div {
+  align-self: center;
+}
+header div:nth-child(1) {
+  font-size: 25pt;
+  justify-self: start;
+}
+header div:nth-child(2) {
+  font-size: 14pt;
+  justify-self: end;
+}
+main {
+  padding: 20px 100px;
+  background-color: #ececec;
+}
+main .radio {
+  display: flex;
+  gap: 15px;
+}
+main .infoTrip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 10px 0 20px 0;
+}
+main .infoTrip input,
+main .infoTrip select {
+  border: 1px solid #b6b5b5;
+  border-radius: 5px;
+  box-shadow: 0px -1px 1px 0px #cecdcd;
+  padding: 10px 5px;
+}
+main .infoTrip input::placeholder,
+main .infoTrip select::placeholder {
+  color: grey;
+}
+main .infoTrip button {
+  background-color: #4f4fc3;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 12pt;
+}
+main .flights {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+}
+main .flights .filter {
+  background-color: white;
+  padding: 40px 20px;
+  box-shadow: 0px 0px 3px 1px #e0e0e0;
+  height: max-content;
+}
+main .flights .filter .fil:nth-child(1) {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-bottom: 20px;
+}
+main .flights .filter div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .flights .filter div .blue {
+  font-weight: bold;
+  font-size: 14pt;
+  color: #4f4fc3;
+}
+main .flights .filter div .stops {
+  padding-left: 3px;
+}
+main .flights .filter .pr {
+  padding: 20px 0;
+}
+main .flights .filter .pr .price {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .flights .filter .pr .price input {
+  width: 60px;
+  border: 1px solid #b6b5b5;
+  border-radius: 5px;
+  padding: 7px 3px;
+}
+main .flights .filter .pr .price .dollar {
+  display: flex;
+  align-items: end;
+  font-size: 14pt;
+}
+main .flights .filter .airlines div {
+  padding-left: 3px;
+}
+main .flights .flying {
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px #e0e0e0;
+}
+main .flights .flying .sydney {
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 40px 20px;
+  text-align: center;
+}
+main .flights .flying .flyingTab {
+  padding-bottom: 40px;
+}
+main .flights .flying .flyingTab .string {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 10px 20px;
+  gap: 10px;
+  background-color: #ececec;
+}
+main .flights .flying .flyingTab .string .line {
+  justify-self: center;
+  color: #4f4fc3;
+  font-size: 14pt;
+  font-weight: bold;
+}
+main .flights .flying .flyingTab .flyingTabOne {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 10px 20px;
+  gap: 10px;
+}
+main .flights .flying .flyingTab .flyingTabOne div {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main .flights .flying .flyingTab .flyingTabOne div .one {
+  font-size: 16pt;
+  padding-bottom: 10px;
+}
+main .flights .flying .flyingTab .flyingTabOne div .two {
+  color: grey;
+  text-align: center;
+}
+main .flights .flying .flyingTab .flyingTabOne div button {
+  background-color: #4f4fc3;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 12pt;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+main .flights .flying .flyingTab .flyingTabOne div .bl {
+  color: #4f4fc3;
+}
