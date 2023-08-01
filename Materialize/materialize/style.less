@@ -1,0 +1,83 @@
+@color1: rgb(144, 14, 184);
+@color2: rgba(144, 14, 184, 0.427);
+@color3: rgba(144, 14, 184, 0.711);
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: @color1;
+    justify-content: space-between;
+    padding: 1% 4%;
+    align-items: center;
+    color: white;
+    font-size: 14pt;
+    .iconHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+
+main {
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    .se1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        >div{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            padding: 10px 20px;
+            &:hover{
+                background-color: @color2;
+            }
+            .icon {
+                font-size: 20pt
+            }
+            .mass {
+                padding: 5px 15px;
+                background-color: @color3;
+            }
+        }
+    }
+    .se2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 15px;
+        gap: 20px;
+        p {
+            font-weight:lighter;
+            font-size: 20pt;
+        }
+        .searchBar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            nav {
+                width: 40%;
+            }
+        }
+        .cards {
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        
+    }
+}
