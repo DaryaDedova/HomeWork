@@ -73,9 +73,45 @@ main {
             }
         }
         .cards {
-            img{
-                width: 100px;
-                height: 100px;
+            width: 90%;
+            padding: 10px 20px;
+            .card {
+                margin: 0;
+            }
+            p {
+                font-size: 14pt;
+                color:darkorchid;
+            }
+            .cardIcon {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                .cardIconOne {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr); 
+                    .rowName{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+                        .icon-calendar2 {
+                            color: black;
+                        }
+                        .icon-location1 {
+                            color: black;
+                        }
+                    }
+                    .name {
+                        font-weight: bold;
+                    }
+                }
+                .cardIconTwo {
+                    justify-self: end;
+                    padding-right: 30px;
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
         

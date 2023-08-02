@@ -67,7 +67,45 @@ main .se2 .searchBar {
 main .se2 .searchBar nav {
   width: 40%;
 }
-main .se2 .cards img {
+main .se2 .cards {
+  width: 90%;
+  padding: 10px 20px;
+}
+main .se2 .cards .card {
+  margin: 0;
+}
+main .se2 .cards p {
+  font-size: 14pt;
+  color: darkorchid;
+}
+main .se2 .cards .cardIcon {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+main .se2 .cards .cardIcon .cardIconOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .se2 .cards .cardIcon .cardIconOne .rowName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .se2 .cards .cardIcon .cardIconOne .rowName .icon-calendar2 {
+  color: black;
+}
+main .se2 .cards .cardIcon .cardIconOne .rowName .icon-location1 {
+  color: black;
+}
+main .se2 .cards .cardIcon .cardIconOne .name {
+  font-weight: bold;
+}
+main .se2 .cards .cardIcon .cardIconTwo {
+  justify-self: end;
+  padding-right: 30px;
+}
+main .se2 .cards .cardIcon img {
   width: 100px;
   height: 100px;
 }
